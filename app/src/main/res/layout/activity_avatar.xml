@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white_background">
+
+    <View
+        android:id="@+id/top_background_deco"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent="0.4"
+        android:background="@drawable/blue_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="QUAY VỀ MENU"
+        android:backgroundTint="@color/professional_blue"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_percent="0.8" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="-75dp"
+        android:elevation="10dp"
+        android:src="@drawable/avatar"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/top_background_deco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hồ sơ cá nhân"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="80dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sinh viên: Huỳnh Thanh Tú"
+            android:textSize="18sp"
+            android:textColor="@color/dark_text"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Khóa: K23"
+            android:textSize="18sp"
+            android:textColor="@color/dark_text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngành: An Toàn Thông Tin"
+            android:textSize="18sp"
+            android:textColor="@color/dark_text" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

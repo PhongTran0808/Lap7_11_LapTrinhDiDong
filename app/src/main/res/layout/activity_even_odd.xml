@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="100dp"
+    android:paddingLeft="24dp"
+    android:paddingRight="24dp"
+    android:paddingBottom="24dp"
+
+    android:background="@color/soft_gray"
+    tools:context=".EvenOddActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PHÂN BIỆT SỐ CHẴN VÀ SỐ LẺ"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/professional_blue"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhập mảng số (cách nhau bằng khoảng trắng, ví dụ: 1 5 8 12 17):"
+        android:textColor="@color/dark_text"
+        android:layout_marginBottom="8dp"/>
+
+    <EditText
+        android:id="@+id/et_number_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ví dụ: 1 2 3 4 5"
+        android:inputType="text"
+        android:padding="10dp"
+        android:background="@color/white"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_submit_even_odd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PHÂN TÍCH"
+        android:backgroundTint="@color/professional_blue"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SỐ CHẴN:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text" />
+
+    <TextView
+        android:id="@+id/tv_even_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="[Chưa có kết quả]"
+        android:textSize="16sp"
+        android:textColor="@color/dark_text"
+        android:padding="8dp"
+        android:background="@android:color/holo_green_light"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SỐ LẺ:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/dark_text" />
+
+    <TextView
+        android:id="@+id/tv_odd_numbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@android:color/holo_red_light"
+        android:padding="8dp"
+        android:text="[Chưa có kết quả]"
+        android:textColor="@color/dark_text"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_back_from_even_odd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/light_text"
+        android:text="QUAY VỀ MENU" />
+
+</LinearLayout>
